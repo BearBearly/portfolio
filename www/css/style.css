@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  min-height: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  /*padding-top: 80px;*/
+  /*for fixed header*/
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+  color: #000;
+}
+
+.wrapper{
+  margin: 0 auto;
+  max-width: 1170px;
+  position: relative;
+  z-index: 2;
+  padding: 0 15px;
+}
+
+.wrapper_full-width{
+  max-width: none;
+}
+
+.wrapper_footer-contacts{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+[class*="column"]{
+  padding: 0 15px;
+  width: 100%;
+}
+
+.row{
+  margin: 0 -15px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img{
+  max-width: 100%;
+}
+
+.wrapper{
+  margin: 0 auto;
+  max-width: 1170px;
+  position: relative;
+  z-index: 2;
+  padding: 0 15px;
+}
+
+.wrapper_full-width{
+  max-width: none;
+}
+
+.header{
+  background: url(../img/header-bg.png) no-repeat top;
+  color: #fff;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.row_header{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+
+.main-nav ul{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.main-nav ul li{
+  width: 100%;
+}
+
+.main-nav ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.header_fixed{
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+}
+
+.footer{
+  background: #333;
+  color: #fff;
+  margin-top: auto;
+}
