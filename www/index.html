@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <title>title is important</title>
+  <title>lex lowndes</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,500" rel="stylesheet">
   <link rel="stylesheet" href="css/fonts.css"> 
   <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="css/media.css"> 
 </head>
 <body>
   <div class="header">
-    <div class="wrapper">
+    <div class="wrapper wrapper_header">
       <div class="row row_header">
         <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
-        <nav class="main-nav">
-          <div class="main-nav__opener">
-            <span><i class="fas fa-bars"></i></span>
-          </div>
+        <button class="toggle-mnu">
+          <span class="sandwich">
+            <span class="sw-topper"></span>
+            <span class="sw-bottom"></span>
+            <span class="sw-footer"></span>
+          </span>
+        </button>
+        <nav class="top-mnu">
           <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">My Education</a></li>
-            <li><a href="#">My Skills</a></li>
-            <li><a href="#">My Portfolio</a></li>
-            <li><a href="#">Contact Me</a></li>                     
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">My Education</a></li>
+            <li><a href="#skills">My Skills</a></li>
+            <li><a href="#portfolio">My Portfolio</a></li>
+            <li><a href="#contacts">Contact Me</a></li>
           </ul>
         </nav>
       </div>
+      <div class="intro">
+        <img src="img/photo.png" alt="photo" class="intro__photo">
+        <div class="intro__title">lex lowndes</div>
+        <div class="intro__description">UI / UX Designer</div>
+      </div>
+      <a href="#" class="btn_download">download resume</a>
     </div>
-    <div class="intro">
-      <img src="img/photo.png" alt="photo" class="intro__photo">
-      <div class="intro__title">lex luther</div>
-      <div class="intro__description">UI / UX Designer</div>
-    </div>
-    <a href="#" class="btn_download">download resume</a>
   </div>
-  <div class="page">
-    <div class="wrapper">
+
+  <div class="section section-about-me">
+    <div class="wrapper wrapper_section">
       page content
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -50,6 +56,7 @@
       footer
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>  
   <script src="js/src.js" ></script>  
 </body>
 </html>
