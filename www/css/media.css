@@ -7,12 +7,15 @@
 
 @media (min-width: 768px){
   /*tablet*/
+  .column-tablet-1-2{
+    max-width: 50%;
+  }
 
-  .toggle-mnu{
+  .toggle-main-nav{
     display: none;
   }
 
-  .top-mnu{
+  .main-nav{
     position: static;
     display: block;
     width: auto;
@@ -20,7 +23,7 @@
     background: none;
   }
 
-  .top-mnu ul{
+  .main-nav ul{
     -webkit-flex-direction: row;
     -moz-flex-direction: row;
     -ms-flex-direction: row;
@@ -29,15 +32,15 @@
     margin-top: 0;
   }
 
-  .top-mnu ul li{
+  .main-nav ul li{
     margin-left: 35px;
   }
 
-  .top-mnu ul li:first-child{
+  .main-nav ul li:first-child{
     margin-left: 0;
   }
 
-  .top-mnu li a{
+  .main-nav li a{
     height: auto;
     text-transform: none;
     padding: 5px 0;
@@ -46,8 +49,36 @@
     transition: border .3s
   }
 
-  .top-mnu ul a:hover {
+  .main-nav ul a:hover {
     border-bottom: 1px solid rgba(255, 255, 255, .5);
+  }
+
+  .column_section-about-me:nth-child(odd){
+    padding-right: 45px;
+  }
+  .column_section-about-me:nth-child(even){
+    padding-left: 45px;
+  }
+
+  .wrapper_skew_section:before{
+    background: #cbcbcb;
+  }
+
+  .achievement,
+  .about-achievemen{
+    margin-bottom: 0;
+  }
+
+  .about-achievement:before{
+    top: 0;
+    left: -9px;
+    bottom: 0;
+    margin: auto 0;
+  }
+
+  .about-achievement_even:before{
+    left: auto;
+    right: -9px;
   }
 }
 
@@ -62,6 +93,10 @@
   /*desktop*/
   .colum-desktop-1-4{
     max-width: 25%;
+  }
+
+  .column_section-about-me{
+    max-width: 35%;
   }
 }
 

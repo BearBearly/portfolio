@@ -58,11 +58,14 @@ img{
   max-width: 100%;
 }
 
+.m-b-30{
+  margin-bottom: 30px;
+}
+
 .header{
   color: #fff;
   text-align: center;
   background: center url(../img/header-bg.jpg) no-repeat;
-  height: 667px;
   position: relative;
 }
 
@@ -90,15 +93,16 @@ img{
   transform: skewY(-2.5deg);
 }
 
-.wrapper_section{
+.wrapper_skew_section{
   -webkit-transform: skewY(2.5deg);
   -ms-transform: skewY(2.5deg);
   -o-transform: skewY(2.5deg);
   transform: skewY(2.5deg);
 }
 
+
 /*----------main-nav--------------*/
-.toggle-mnu {
+.toggle-main-nav {
   width: 55px;
   height: 55px;
   position: fixed;
@@ -110,7 +114,7 @@ img{
   background: #000;
 }
 
-.toggle-mnu span {
+.toggle-main-nav span {
   display: block; 
 }
 
@@ -189,7 +193,7 @@ img{
   transform: rotate(180deg); 
 }
 
-.top-mnu {
+.main-nav {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -200,14 +204,14 @@ img{
   display: none; 
 }
 
-.top-mnu ul,
-.top-mnu li {
+.main-nav ul,
+.main-nav li {
   list-style-type: none;
   padding: 0;
   margin: 0; 
 }
 
-.top-mnu ul {
+.main-nav ul {
   margin-top: 180px;
   text-align: center;
   -webkit-animation-duration: 0.01s;
@@ -224,27 +228,27 @@ img{
   flex-direction: column;
 }
 
-.top-mnu ul li:nth-child(1) a {
+.main-nav ul li:nth-child(1) a {
   -webkit-animation-delay: 0;
   animation-delay: 0; 
 }
 
-.top-mnu ul li:nth-child(2) a {
+.main-nav ul li:nth-child(2) a {
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s; 
 }
 
-.top-mnu ul li:nth-child(3) a {
+.main-nav ul li:nth-child(3) a {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s; 
 }
 
-.top-mnu ul li:nth-child(4) a {
+.main-nav ul li:nth-child(4) a {
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s; 
 }
 
-.top-mnu ul a {
+.main-nav ul a {
   color: #fff;
   display: block;
   text-transform: uppercase;
@@ -255,7 +259,7 @@ img{
   outline: none; 
 }
 
-.top-mnu ul a span {
+.main-nav ul a span {
   display: block;
   position: relative;
   top: -40px;
@@ -265,7 +269,7 @@ img{
   transition: all 0.5s ease; 
 }
 
-.top-mnu ul a span:hover {
+.main-nav ul a span:hover {
   background-color: rgba(255, 255, 255, 0.1); 
 }
 /*---*/
@@ -291,12 +295,11 @@ img{
   line-height: 30px;
 }
 
-.btn_download{
+.button{
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
-  padding: 13px 41px;
   border: 1px solid #fff;
   background-color: transparent;
   -webkit-transition: background .3s;
@@ -304,12 +307,99 @@ img{
   transition: background .3s;
 }
 
-.btn_download:hover{
+.button:hover{
   background-color: rgba(255, 255, 255, 0.1); 
 }
 
-.section-about-me{
-  margin-top: -2.2%;
-  padding: 2.2% 0;
+.button_download{
+  padding: 13px 41px;
+  margin-bottom: 230px;
+}
 
+.section-about-me{
+  margin-top: -30px;
+  margin-bottom: 30px;
+  padding: 130px 0 100px;
+  position: relative;
+}
+
+.wrapper_skew_section:before{
+  content: '';
+  position: absolute;
+  top: -65px;
+  bottom: -90px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  height: auto;
+  width: 1px;
+  background: transparent;
+}
+
+.row_section-about-me{
+  justify-content: center;
+}
+
+.achievement,
+.about-achievemen{
+  margin-bottom: 30px;
+}
+
+.achievement{
+  text-align: center;
+}
+
+.achievement__title,
+.about-achievement span{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.achievement__title{
+  font-size: 48px;
+}
+
+.achievement__title span{
+  color: #ffd800;
+}
+
+.achievement__text{
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.about-achievement{
+  color: #fff;
+  background: #ffd800;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.about-achievement span{
+  display: block;
+}
+
+.about-achievement:before{
+  content: '';
+  position: absolute;
+  top: -9px;
+  right: 0;
+  left: 0;
+  bottom: auto;
+  margin: auto;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 18px;
+  height: 18px;
+  background: #ffd800;
+}
+
+.about-achievement_even:before{
+  top: auto;
+  bottom: -9px;
 }
