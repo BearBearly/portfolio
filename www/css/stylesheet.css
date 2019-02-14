@@ -1,0 +1,23 @@
+.icon {
+    background-image: url('../img/spritesheet.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.icon-roll {
+    width: 64px;
+    height: 64px;
+    background-position: 0 0;
+}
+
+.icon-hat {
+    width: 64px;
+    height: 54px;
+    background-position: -64px 0;
+}
+
+.icon-certificate {
+    width: 64px;
+    height: 62px;
+    background-position: -64px -54px;
+}

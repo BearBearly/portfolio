@@ -51,7 +51,6 @@ body{
   -ms-align-items: center;
   align-items: center;
   margin: 40px 0 100px;
-
 }
 
 img{
@@ -85,29 +84,31 @@ img{
   height: 100%;
 }
 
-.section{
+.section_gray{
   background: #efefef;
+}
+
+.section{
   -webkit-transform: skewY(-2.5deg);
   -ms-transform: skewY(-2.5deg);
   -o-transform: skewY(-2.5deg);
   transform: skewY(-2.5deg);
 }
 
-.wrapper_skew_section{
+.wrapper_skew-section{
   -webkit-transform: skewY(2.5deg);
   -ms-transform: skewY(2.5deg);
   -o-transform: skewY(2.5deg);
   transform: skewY(2.5deg);
 }
 
-
 /*----------main-nav--------------*/
 .toggle-main-nav {
   width: 55px;
   height: 55px;
   position: fixed;
-  right: 20px;
-  top: 20px; 
+  right: 15px;
+  top: 15px; 
   z-index: 100;
   border: none;
   outline: none;
@@ -319,11 +320,11 @@ img{
 .section-about-me{
   margin-top: -30px;
   margin-bottom: 30px;
-  padding: 130px 0 100px;
+  padding: 30px 0 60px;
   position: relative;
 }
 
-.wrapper_skew_section:before{
+.wrapper_section-about-me:before{
   content: '';
   position: absolute;
   top: -65px;
@@ -336,6 +337,7 @@ img{
   background: transparent;
 }
 
+.row_section-education,
 .row_section-about-me{
   justify-content: center;
 }
@@ -359,10 +361,6 @@ img{
   font-size: 48px;
 }
 
-.achievement__title span{
-  color: #ffd800;
-}
-
 .achievement__text{
   font-size: 14px;
   line-height: 24px;
@@ -370,7 +368,6 @@ img{
 
 .about-achievement{
   color: #fff;
-  background: #ffd800;
   font-size: 36px;
   line-height: 48px;
   text-align: center;
@@ -379,6 +376,15 @@ img{
   letter-spacing: 1px;
   position: relative;
 }
+
+.achievement.yellow .achievement__title span{ color: #ffd800; }
+.about-achievement.yellow{ background: #ffd800; }
+
+.achievement.blue .achievement__title span{ color: #49def4; }
+.about-achievement.blue{ background: #49def4; }
+
+.achievement.green .achievement__title span{ color: #56de96; }
+.about-achievement.green{ background: #56de96; }
 
 .about-achievement span{
   display: block;
@@ -396,10 +402,143 @@ img{
   transform: rotate(45deg);
   width: 18px;
   height: 18px;
-  background: #ffd800;
 }
+
+.about-achievement:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 1px solid #999;
+  background: #efefef;
+  border-radius: 50%;
+  display: none;
+}
+
+.column_section-about-me:nth-child(even) .about-achievement:after{
+  left: -54px;
+  width: 16px;
+  height: 16px;
+}
+
+.column_section-about-me:nth-child(odd) .about-achievement:after{
+  right: -58.5px;
+  width: 25px;
+  height: 25px;
+}
+
+.about-achievement.yellow:before{ background: #ffd800; }
+
+.about-achievement.blue:before{ background: #49def4; }
+
+.about-achievement.green:before{ background: #56de96; }
 
 .about-achievement_even:before{
   top: auto;
   bottom: -9px;
+}
+
+.section-education{
+  padding: 30px 0;
+}
+
+.educational-achievements{
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.educational-achievements__icon{
+  display: inline-block;
+  position: relative;
+  margin: 40px 0;
+}
+
+.educational-achievements__icon:before{
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  width: 24px;
+  height: 41px;
+  background-image: url('../img/part_icon.png');
+}
+
+.educational-achievements__icon:after{
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 24px;
+  height: 41px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  background-image: url('../img/part_icon.png');
+}
+
+.educational-achievements__name{
+  font-size: 30px;
+  line-height: 48px;
+}
+
+.educational-achievements__name-school{
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+
+.educational-achievements__descripton{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.section-skills{
+  position: relative;
+  padding: 30px 0;
+  background: url('../img/skills-bg.jpg');
+}
+
+.section-skills:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 14, 3, .75);
+}
+
+.column-skill{
+  margin-bottom: 30px;
+}
+
+.progress-circle{
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.progress-circle p{
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  margin: auto;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  padding: 5px 0;
+}
+
+.progress-circle__title{
+  font-size: 22px;
+  margin: 15px 0;
 }

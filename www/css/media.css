@@ -9,6 +9,10 @@
   /*tablet*/
   .column-tablet-1-2{
     max-width: 50%;
+  }  
+
+  .column-tablet-1-4{
+    max-width: 25%;
   }
 
   .toggle-main-nav{
@@ -53,6 +57,10 @@
     border-bottom: 1px solid rgba(255, 255, 255, .5);
   }
 
+  .section-about-me{
+    padding: 130px 0 160px;
+  }
+
   .column_section-about-me:nth-child(odd){
     padding-right: 45px;
   }
@@ -60,7 +68,7 @@
     padding-left: 45px;
   }
 
-  .wrapper_skew_section:before{
+  .wrapper_section-about-me:before{
     background: #cbcbcb;
   }
 
@@ -80,12 +88,41 @@
     left: auto;
     right: -9px;
   }
+
+  .about-achievement:after{
+    display: block;
+  }
+
+  .section-skills{
+    padding: 80px 0;
+  }
+
+  .column-skill{
+    margin-bottom: 0;
+  }
+
+  .progress-circle__title{
+    margin: 35px 0;
+  }
+
 }
 
 @media (min-width: 1000px){
   /*laptop*/
   .colum-laptop-1-3{
     max-width: 33.33%;
+  }
+
+  .section-education{
+    padding: 90px 0;
+  }
+
+  .educational-achievements{
+    margin-bottom: 0px;
+  }
+
+  .educational-achievements__icon{
+    margin: 50px 0;
   }
 }
 

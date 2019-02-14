@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,500" rel="stylesheet">
   <link rel="stylesheet" href="css/fonts.css"> 
+  <link rel="stylesheet" href="css/stylesheet.css"> 
   <link rel="stylesheet" href="css/style.css"> 
   <link rel="stylesheet" href="css/media.css"> 
 </head>
@@ -40,45 +41,109 @@
     </div>
   </div>
 
-  <div class="section section-about-me">
-    <div class="wrapper wrapper_skew_section">
+  <div id="about" class="section section-about-me section_gray">
+    <div class="wrapper wrapper_section-about-me wrapper_skew-section">
       <div class="row row_section-about-me">
         <div class="column column-tablet-1-2 column_section-about-me">
-          <div class="achievement"> 
+          <div class="achievement yellow"> 
             <div class="achievement__title"><span>01. </span>Passion</div>
             <div class="achievement__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis orci ac nisi mollis sollicitudin quis sed eros.</div>
           </div>
         </div>
         <div class="column column-tablet-1-2 column_section-about-me">
-          <div class="about-achievement m-b-30"><span>122</span>Sleepless Nights</div>
+          <div class="about-achievement yellow m-b-30"><span>122</span>Sleepless Nights</div>
         </div>
         <div class="column column-tablet-1-2 column_section-about-me">
-          <div class="about-achievement about-achievement_even m-b-30"><span>122</span>Sleepless Nights</div>
+          <div class="about-achievement blue about-achievement_even m-b-30"><span>5</span>Certifications</div>
         </div>
         <div class="column column-tablet-1-2 column_section-about-me">
-          <div class="achievement m-b-30"> 
-            <div class="achievement__title"><span>01. </span>Passion</div>
+          <div class="achievement blue m-b-30"> 
+            <div class="achievement__title"><span>02. </span>Knowledge</div>
+            <div class="achievement__text">Pellentesque faucibus leo id velit dictum mattis. Nam tincidunt risus ac aliquet suscipit. Aenean sit amet accumsan tellus</div>
+          </div>
+        </div>
+        <div class="column column-tablet-1-2 column_section-about-me">
+          <div class="achievement green"> 
+            <div class="achievement__title"><span>03. </span>Experience</div>
             <div class="achievement__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis orci ac nisi mollis sollicitudin quis sed eros.</div>
           </div>
         </div>
         <div class="column column-tablet-1-2 column_section-about-me">
-          <div class="achievement"> 
-            <div class="achievement__title"><span>01. </span>Passion</div>
-            <div class="achievement__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis orci ac nisi mollis sollicitudin quis sed eros.</div>
+          <div class="about-achievement green m-b-30"><span>232</span>Projects</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="education" class="section section-education">
+    <div class="wrapper wrapper_skew-section">
+      <div class="row row_section-education">
+        <div class="column column-tablet-1-2 colum-laptop-1-3">
+          <div class="educational-achievements">
+            <i class="educational-achievements__icon icon icon-roll"></i>
+            <div class="educational-achievements__name">Bachelor's degree</div>
+            <div class="educational-achievements__name-school">New Western College</div>
+            <div class="educational-achievements__descripton">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida velit leo, a commodo sem ornare id.</div>
           </div>
         </div>
-        <div class="column column-tablet-1-2 column_section-about-me">
-          <div class="about-achievement m-b-30"><span>122</span>Sleepless Nights</div>
+        <div class="column column-tablet-1-2 colum-laptop-1-3">
+          <div class="educational-achievements">
+            <i class="educational-achievements__icon icon icon-hat"></i>
+            <div class="educational-achievements__name">Master's degree</div>
+            <div class="educational-achievements__name-school">New Western College</div>
+            <div class="educational-achievements__descripton">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida velit leo, a commodo sem ornare id.</div>
+          </div>
+        </div>
+        <div class="column column-tablet-1-2 colum-laptop-1-3">
+          <div class="educational-achievements">
+            <i class="educational-achievements__icon icon icon-certificate"></i>
+            <div class="educational-achievements__name">Master's degree</div>
+            <div class="educational-achievements__name-school">New Western College</div>
+            <div class="educational-achievements__descripton">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida velit leo, a commodo sem ornare id.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="skills" class="section section-skills">
+    <div class="wrapper wrapper_skew-section">
+      <div class="row">
+        <div class="column column-phablet-1-2 column-tablet-1-4 column-skill">
+          <div class="progress-circle">
+            <input type="text" value="35" class="dial1" data-readOnly="true" data-width="160" data-height="160" data-fgColor="#fdc426" data-bgColor="#fff" data-thickness=.1 data-displayInput=false>
+            <p>35%</p>
+            <div class="progress-circle__title">UI / UX</div>
+          </div>
+        </div>        
+        <div class="column column-phablet-1-2 column-tablet-1-4 column-skill">
+          <div class="progress-circle">
+            <input type="text" value="55" class="dial2" data-readOnly="true" data-width="160" data-height="160" data-fgColor="#fdc426" data-bgColor="#fff" data-thickness=.1 data-displayInput=false>
+            <p>55%</p>
+            <div class="progress-circle__title">Designing</div>
+          </div>
+        </div>
+        <div class="column column-phablet-1-2 column-tablet-1-4 column-skill">
+          <div class="progress-circle">
+            <input type="text" value="45" class="dial3" data-readOnly="true" data-width="160" data-height="160" data-fgColor="#fdc426" data-bgColor="#fff" data-thickness=.1 data-displayInput=false>
+            <p>45%</p>
+            <div class="progress-circle__title">HTML / CSS</div>
+          </div>
+        </div>
+        <div class="column column-phablet-1-2 column-tablet-1-4 column-skill">
+          <div class="progress-circle">
+            <input type="text" value="35" class="dial4" data-readOnly="true" data-width="160" data-height="160" data-fgColor="#fdc426" data-bgColor="#fff" data-thickness=.1 data-displayInput=false>
+            <p>35%</p>
+            <div class="progress-circle__title">Coding</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="footer">
-    <div class="wrapper wrapper_full-width">
-      <div class="asdas">asdasdasd</div>
+    <div class="wrapper">
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+  <script src="js/jquery.knob.min.js"></script>  
   <script src="js/src.js" ></script>  
 </body>
 </html>
