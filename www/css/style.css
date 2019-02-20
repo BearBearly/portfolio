@@ -542,3 +542,36 @@ img{
   font-size: 22px;
   margin: 15px 0;
 }
+
+.row_section-portfolio{
+  display: block;
+  flex-wrap: nowrap;
+}
+
+#masonry-grid{
+  margin: 0;
+}
+.grid-item{
+  margin-bottom: -4px;
+  /*margin-bottom: 16px;*/
+
+
+}
+
+
+.category-one{
+  max-width: 426px;
+}
+
+.category-two{
+  max-width: 418px;
+/*  margin-left: 18px;
+  margin-right: 18px;*/
+}
+.category-third{
+  max-width: 290px;
+}
+
+.wrapper_section-portfolio{
+  padding: 0;
+}

@@ -1,10 +1,19 @@
+
+
+$('#masonry-grid').masonry({
+  columnWidth: 1,
+  itemSelector: '.grid-item'
+});
+
+
+
 $(".toggle-main-nav").click(function() {
   $(".sandwich").toggleClass("active");
 });
 
 $(".main-nav ul a").click(function() {
-  $(".main-nav").fadeOut(600);
-  $(".sandwich").toggleClass("active");
+ $(".main-nav").fadeOut(600);
+ $(".sandwich").toggleClass("active");
 }).append("<span>");
 
 $(".toggle-main-nav").click(function() {
@@ -52,4 +61,4 @@ $({animatedVal: 0}).animate({animatedVal: 35}, {
   step: function() { 
     $(".dial4").val(Math.ceil(this.animatedVal)).trigger("change"); 
   }   
-});  
+});
