@@ -1,4 +1,5 @@
-
+var gridItemImg = document.querySelector('.grid-item img');
+// hiden-info == grid-item img 
 
 $('#masonry-grid').masonry({
   columnWidth: 1,

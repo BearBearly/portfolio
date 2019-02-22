@@ -105,6 +105,33 @@
     margin: 35px 0;
   }
 
+  /*masonry*/
+  .grid-item{
+    right: auto;
+    margin-bottom: 16px;
+  }
+  .category-one{
+    max-width: 426px;
+  }
+
+  .category-two{
+    max-width: 418px;
+
+  }
+  .category-third{
+    max-width: 290px;
+  }
+
+  .hiden-info{
+    min-height: 110px;
+    text-align: left;
+  }
+
+  .hiden-info__raiting{
+    display: inline-block;
+    float: right;
+  }
+
 }
 
 @media (min-width: 1000px){
