@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,500" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="css/fonts.css"> 
   <link rel="stylesheet" href="css/stylesheet.css"> 
   <link rel="stylesheet" href="css/style.css"> 
@@ -143,106 +144,131 @@
 
   <div id="portfolio" class="section section-portfolio">
     <div class="wrapper wrapper_section-portfolio wrapper_skew-section">
-      <div id="masonry-grid">
+      <ul id="grid-filter">
+        <li data-category="*">All</li><span>/</span>
+        <li data-category="category-one">UI - UX</li><span>/</span>
+        <li data-category="category-two">Designing</li><span>/</span>
+        <li data-category="category-third">HTML - CSS</li><span>/</span>
+        <li data-category="category-four">Coding</li>
+      </ul>
+      <div class="row" id="masonry-grid">
         <div class="gutter-sizer"></div>
-        <div class="grid-item category-one">
+        <div class="column column_masonry grid-item category-one category-four">
           <img src="img/1-portfolio-item.jpg" alt="">
-          <div class="hiden-info">
-            <div class="hiden-info__title">Lorem Ipsum Dolor</div>
-            <div class="hiden-info__raiting">
+          <div class="hidden-info">
+            <div class="hidden-info__title">Lorem Ipsum Dolor</div>
+            <div class="hidden-info__raiting">
               <i class="icon icon-star_orange"></i>
               <i class="icon icon-star_orange"></i>
               <i class="icon icon-star_orange"></i>
               <i class="icon icon-star_silver"></i>
               <i class="icon icon-star_silver"></i>
             </div>
-            <div class="hiden-info__text">Donec malesuada facilisis purus et egestas Nulla dictum ante quis tortor facilisis facilisis non sed erat</div>
+            <div class="hidden-info__text">Donec malesuada facilisis purus et egestas Nulla dictum ante quis tortor facilisis facilisis non sed erat</div>
           </div>
         </div>
-        <div class="grid-item category-two">
+        <div class="column column_masonry grid-item category-two">
           <img src="img/2-portfolio-item.jpg" alt="">
-          <div class="hiden-info">
-            <div class="hiden-info__title">Lorem Ipsum Dolor</div>
-            <div class="hiden-info__raiting">
+          <div class="hidden-info">
+            <div class="hidden-info__title">Lorem Ipsum Dolor</div>
+            <div class="hidden-info__raiting">
               <i class="icon icon-star_orange"></i>
               <i class="icon icon-star_orange"></i>
               <i class="icon icon-star_silver"></i>
               <i class="icon icon-star_silver"></i>
               <i class="icon icon-star_silver"></i>
             </div>
-            <div class="hiden-info__text">Donec malesuada facilisis purus et egestas Nulla dictum ante quis tortor facilisis facilisis non sed erat</div>
+            <div class="hidden-info__text">Donec malesuada facilisis purus et egestas Nulla dictum ante quis tortor facilisis facilisis non sed erat</div>
           </div>
         </div>
-        <div class="grid-item category-third">
+        <div class="column column_masonry grid-item category-third category-four">
           <img src="img/3-portfolio-item.jpg" alt="">
-          <div class="hiden-info">
-            <div class="hiden-info__title">Lorem Ipsum Dolor</div>
-            <div class="hiden-info__raiting">
+          <div class="hidden-info narrow">
+            <div class="hidden-info__title">Lorem Ipsum Dolor</div>
+            <div class="hidden-info__raiting">
               <i class="icon icon-star_orange"></i>
               <i class="icon icon-star_orange"></i>
               <i class="icon icon-star_silver"></i>
               <i class="icon icon-star_silver"></i>
               <i class="icon icon-star_silver"></i>
             </div>
-            <div class="hiden-info__text">Donec malesuada facilisis purus et egestas Nulla dictum ante quis tortor facilisis facilisis non sed erat</div>
+            <div class="hidden-info__text">Donec malesuada facilisis purus et egestas Nulla dictum ante quis tortor facilisis facilisis non sed erat</div>
           </div>
         </div>
-        <div class="grid-item category-one">
+        <div class="column column_masonry grid-item category-one category-four">
           <img src="img/4-portfolio-item.jpg" alt="">
-          <div class="hiden-info">
-            <div class="hiden-info__title">Lorem Ipsum Dolor</div>
-            <div class="hiden-info__raiting">
+          <div class="hidden-info">
+            <div class="hidden-info__title">Lorem Ipsum Dolor</div>
+            <div class="hidden-info__raiting">
               <i class="icon icon-star_orange"></i>
               <i class="icon icon-star_orange"></i>
               <i class="icon icon-star_silver"></i>
               <i class="icon icon-star_silver"></i>
               <i class="icon icon-star_silver"></i>
             </div>
-            <div class="hiden-info__text">Donec malesuada facilisis purus et egestas Nulla dictum ante quis tortor facilisis facilisis non sed erat</div>
+            <div class="hidden-info__text">Donec malesuada facilisis purus et egestas Nulla dictum ante quis tortor facilisis facilisis non sed erat</div>
           </div>
         </div>
-        <div class="grid-item category-two">
+        <div class="column column_masonry grid-item category-two">
           <img src="img/5-portfolio-item.jpg" alt="">
-          <div class="hiden-info">
-            <div class="hiden-info__title">Lorem Ipsum Dolor</div>
-            <div class="hiden-info__raiting">
+          <div class="hidden-info">
+            <div class="hidden-info__title">Lorem Ipsum Dolor</div>
+            <div class="hidden-info__raiting">
               <i class="icon icon-star_orange"></i>
               <i class="icon icon-star_orange"></i>
               <i class="icon icon-star_silver"></i>
               <i class="icon icon-star_silver"></i>
               <i class="icon icon-star_silver"></i>
             </div>
-            <div class="hiden-info__text">Donec malesuada facilisis purus et egestas Nulla dictum ante quis tortor facilisis facilisis non sed erat</div>
+            <div class="hidden-info__text">Donec malesuada facilisis purus et egestas Nulla dictum ante quis tortor facilisis facilisis non sed erat</div>
           </div>
         </div>
-        <div class="grid-item category-third">
+        <div class="column column_masonry grid-item category-third">
           <img src="img/6-portfolio-item.jpg" alt="">
-          <div class="hiden-info">
-            <div class="hiden-info__title">Lorem Ipsum Dolor</div>
-            <div class="hiden-info__raiting">
+          <div class="hidden-info narrow">
+            <div class="hidden-info__title">Lorem Ipsum Dolor</div>
+            <div class="hidden-info__raiting">
               <i class="icon icon-star_orange"></i>
               <i class="icon icon-star_orange"></i>
               <i class="icon icon-star_silver"></i>
               <i class="icon icon-star_silver"></i>
               <i class="icon icon-star_silver"></i>
             </div>
-            <div class="hiden-info__text">Donec malesuada facilisis purus et egestas Nulla dictum ante quis tortor facilisis facilisis non sed erat</div>
+            <div class="hidden-info__text">Donec malesuada facilisis purus et egestas Nulla dictum ante quis tortor facilisis facilisis non sed erat</div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-
-
-  <div id="contacts" class="section section-contacts">
-    sdfsd
-  </div>
-
-  <div class="footer">
+  <div id="contacts" class="footer">
     <div class="wrapper">
+      <div class="row">
+        <div class="column">
+          <div class="about-me">
+            <img class="about-me__photo" src="img/photo.png" alt="photo" >
+            <div class="about-me__name">lex lowndes</div>
+            <div class="about-me__specialization">UI / UX Designer</div>
+          </div>
+          <div class="contact-info">
+            <div class="contact-info__address">1234 Street, Opp Trademark, New York City, Ny - 23456</div>
+            <div class="contact-info__phone">+1 555-222-3333</div>
+            <div class="contact-info__mail">lexluthar@gmail.com</div>
+          </div>
+          <a href="#" class="button button_download">download resume</a>
+          <div class="soc_icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-dribbble"></i>
+            <i class="fab fa-pinterest-p"></i>
+          </div>
+        </div>
+        <div class="column"></div>
+      </div>
     </div>
   </div>
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="js/imagesloaded.pkgd.min.js"></script>
   <script src="js/masonry.pkgd.min.js"></script>

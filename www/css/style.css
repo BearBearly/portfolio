@@ -545,7 +545,7 @@ img{
 
 .section-portfolio{
   background: #efefef;
-  padding: 30px 0;
+  padding: 60px 0;
 }
 
 .wrapper_section-portfolio{
@@ -558,27 +558,53 @@ img{
 }
 
 /*masonry*/
+#grid-filter{
+  text-align: center;
+  font-size: 0;
+  margin-bottom: 60px;
+}
+
+#grid-filter li,
+#grid-filter span{
+  font-family: 'Raavi';
+  font-size: 22px;
+  line-height: 30px;
+}
+
+#grid-filter li{
+  list-style: none; 
+  display: inline-block; 
+  padding: 0; 
+}
+
+#grid-filter span{
+  color: #bab9b9;
+  padding: 0 18px;
+}
 
 #masonry-grid{
   margin: 0;
 }
 .grid-item{
-  right: 0;
-  margin: 0 4px 6px;
-}
-
-.grid-item {
   overflow: hidden;
+  right: 0;
+  /**/
+  margin: 0 auto 6px;
 }
 
-
-
-
-.image-wrapper{
-  display: block;
-  margin: 0 10px;
+.category-one{
+  max-width: 426px;
 }
-.hiden-info{
+
+.category-two{
+  max-width: 418px;
+
+}
+.category-third{
+  max-width: 290px;
+}
+
+.hidden-info{
   position: absolute;
   bottom: -100%;
   background: #fff;
@@ -588,27 +614,49 @@ img{
   -webkit-transition: bottom .4s;
   -o-transition: bottom .4s;
   transition: bottom .4s;
-
+  /**/
+  height: 100%;
+  left: 10px;
+  right: 10px;
 }
 
-.grid-item:hover .hiden-info{
-  bottom: 0;
+.grid-item:hover .hidden-info{
+  bottom: 4px;
 }
 
-.hiden-info__title{
+.hidden-info__title{
   font-size: 18px;
   font-weight: 500;
   display: inline-block;
   padding-bottom: 10px;
 }
 
-.hiden-info__raiting{
+.hidden-info__raiting{
   padding-bottom: 10px;
 }
 
-.hiden-info__text{
+.hidden-info__text{
   font-size: 12px;
   color: #6a6a6a;
   padding-bottom: 10px;
+}
+
+.column_masonry{
+  padding: 0 10px;
+}
+
+.footer{
+  background: url(../img/footer_bg.png) repeat-x;
+  margin: -90px 0 0;
+  padding: 160px 0 0;
+  color: #fff;
+}
+
+.about-me{
+  margin-top: 35px;
+}
+
+.footer .button_download{
+  margin-bottom: 30px;
 }
 

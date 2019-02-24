@@ -110,28 +110,18 @@
     right: auto;
     margin-bottom: 16px;
   }
-  .category-one{
-    max-width: 426px;
-  }
 
-  .category-two{
-    max-width: 418px;
-
-  }
-  .category-third{
-    max-width: 290px;
-  }
-
-  .hiden-info{
-    min-height: 110px;
+  .hidden-info{
+    height: auto;
+    min-height: 115px;
     text-align: left;
   }
 
-  .hiden-info__raiting{
-    display: inline-block;
-    float: right;
+  .category-one,
+  .category-two,
+  .category-third{
+    right: auto;
   }
-
 }
 
 @media (min-width: 1000px){
@@ -150,6 +140,18 @@
 
   .educational-achievements__icon{
     margin: 50px 0;
+  }
+  .section-portfolio{
+    padding: 130px 0;
+  }
+  .hidden-info__raiting{
+    display: inline-block;
+    float: right;
+    height: auto;
+  }
+
+  .hidden-info.narrow .hidden-info__raiting{
+    float: none;
   }
 }
 
